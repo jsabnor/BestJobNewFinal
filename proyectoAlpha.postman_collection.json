@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "330edbf0-28a5-403c-adf8-677ccab39c47",
+		"name": "proyectoAlpha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/ofertas Listar Ofertas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/ofertas/{id} Muestra una oferta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/ofertas Crea una oferta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"titulo\": \"FullStack Senior\",\n    \"detalle\": \"Programador FullStack Senior 40h Madrid\",\n    \"anyosExperiencia\": 5,\n    \"salario\": 40000.0,\n    \"empresa\": \"ADE Developers S.A\",\n    \"telefono\": \"914584322\",\n    \"email\": \"info@adedev.es\",\n    \"tecnologias\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Spring\"\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"React\"\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"HTML+CSS\"\n        }\n    ],\n    \"remoto\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/ofertas Elimina todas las ofertas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/ofertas/{id} Elimina una oferta por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/ofertas/{id} Actualiza una oferta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"titulo\": \"FullStack Junior\",\r\n    \"detalle\": \"Programador FullStack Junior 40h remoto\",\r\n    \"anyosExperiencia\": 0,\r\n    \"salario\": 18000.0,\r\n    \"empresa\": \"IT Dev S.L\",\r\n    \"telefono\": \"678555888\",\r\n    \"email\": \"info@itdev.com\",\r\n    \"tecnologias\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"Spring\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"nombre\": \"React\"\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"nombre\": \"HTML+CSS\"\r\n        }\r\n    ],\r\n    \"remoto\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ofertas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ofertas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
