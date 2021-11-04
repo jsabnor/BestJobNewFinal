@@ -22,6 +22,7 @@ import java.util.Optional;
  * @version 1.0
  */
 @RestController
+@CrossOrigin
 public class OfertaController {
 
     //ATRIBUTOS

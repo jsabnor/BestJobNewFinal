@@ -39,6 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic();
     }
 
+
     /**
      * Metodo que configura los usuarios en memoria para acceder a las zonas habilitadas para ello
      * @param auth AutenticationMAnagerBuilder

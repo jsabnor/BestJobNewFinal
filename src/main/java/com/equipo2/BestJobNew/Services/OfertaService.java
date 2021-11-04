@@ -80,7 +80,7 @@ public class OfertaService {
     /**
      * Metodo que actuliza una oferta
      * @param oferta con todos los datos
-     * @return devulve la oferta
+     * @return devuelve la oferta
      */
     public Oferta updateOferta(Oferta oferta){
         return ofertaRepository.save(oferta);
