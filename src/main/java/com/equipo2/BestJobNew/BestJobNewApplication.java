@@ -30,7 +30,7 @@ public class BestJobNewApplication {
 
 		//ofertaRepository.deleteAll();
 		//tecnologiaRepository.deleteAll();
-		Tecnologia tec1=new Tecnologia(null,"Spring");
+		/*Tecnologia tec1=new Tecnologia(null,"Spring");
 		Tecnologia tec2=new Tecnologia(null,"React");
 		Tecnologia tec3=new Tecnologia(null,"HTML+CSS");
 		Tecnologia tec4=new Tecnologia(null,"Java");
@@ -75,7 +75,7 @@ public class BestJobNewApplication {
 
 		ofertaRepository.save(oferta1);
 		ofertaRepository.save(oferta2);
-		ofertaRepository.save(oferta3);
+		ofertaRepository.save(oferta3);*/
 
 	}
 
