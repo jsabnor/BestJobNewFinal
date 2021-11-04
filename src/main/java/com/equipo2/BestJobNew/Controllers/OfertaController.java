@@ -22,7 +22,7 @@ import java.util.Optional;
  * @version 1.0
  */
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class OfertaController {
 
     //ATRIBUTOS

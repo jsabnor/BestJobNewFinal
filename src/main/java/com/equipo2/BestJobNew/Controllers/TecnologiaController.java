@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class TecnologiaController {
     //ATRIBUTOS
     private static final String API_BASE="/api/v1";
