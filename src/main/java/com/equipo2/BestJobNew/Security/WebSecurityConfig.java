@@ -30,8 +30,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 //Solo se premitiran acceso a los usuarios que tengan los roles de ADMIN y USER a las siguientes endpoints
                 .antMatchers("/swagger-ui").hasRole("USER")
-                .antMatchers("/ofertas").hasRole("ADMIN")
-                .antMatchers("/tecnologias").hasRole("ADMIN")
+                .antMatchers("/api/v1/ofertas").hasRole("ADMIN")
+                .antMatchers("/api/v1/tecnologias").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
