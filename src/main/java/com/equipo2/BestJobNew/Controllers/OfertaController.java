@@ -50,7 +50,11 @@ public class OfertaController {
     public ResponseEntity<List<Oferta>> mostrarTodas(){
         return new ResponseEntity<>(ofertaService.findAll(), HttpStatus.OK);
     }
-
+    @GetMapping(API_BASE)
+    @ApiOperation("Busca todas las ofertas que hay en la base de datos")
+    public ResponseEntity<List<Oferta>> mostrarTodas2(){
+        return new ResponseEntity<>(ofertaService.findAll(), HttpStatus.OK);
+    }
     /**
      * Metodo que devulve una oferta buscada en la base de datos pasando la id
      * @param id de la oferta
