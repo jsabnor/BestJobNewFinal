@@ -22,6 +22,7 @@ import java.util.Optional;
  * @version 1.0
  */
 @RestController
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class OfertaController {
 
     //ATRIBUTOS
@@ -45,7 +46,7 @@ public class OfertaController {
      * @return ResponseEntity con la lista de ofertas
      */
 
-    @GetMapping(API_BASE+"/ofertas")
+    @GetMapping(API_BASE + "/ofertas")
     @ApiOperation("Busca todas las ofertas que hay en la base de datos")
     public ResponseEntity<List<Oferta>> mostrarTodas(){
         return new ResponseEntity<>(ofertaService.findAll(), HttpStatus.OK);
